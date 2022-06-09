@@ -1,0 +1,58 @@
+/* Container and items */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    /* grid-template-rows: 20vh 76.5vh; */
+    grid-template-rows: auto auto;
+}
+
+.header{
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: firebrick;
+    min-height: 20vh;
+
+    display: grid;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+.leftcol {
+    grid-area: 2 / 1 / 2 / 1;
+    background-color: darkgray;
+    min-height: 76.5vh;
+}
+.rightcol {
+    grid-area: 2 / 2 / 2 / 2;
+    background-color: snow;
+}
+
+/* objects inside items */
+.header * {
+    margin: .4em auto;
+}
+.header h1 {
+    font-size: 3em;
+}
+
+.textbox {
+    margin: 2.5em 2.5em;
+}
+
+.textbox * {
+    margin: .4em auto;
+
+}
+.textbox h2 {
+    letter-spacing: .4em;
+    color: firebrick;
+    font-size: 1.7em;
+}
+.textbox h3 {
+    font-size: 1.5em;
+}
+.textbox li {
+    font-size: 1.3em;
+}
+.textbox p {
+    margin: .1em
+}
